@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Interaction</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include EmailJS library -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with your user ID
+            emailjs.init('your-user-id'); // Replace 'your-user-id' with the actual user ID from EmailJS
+        })();
+    </script>
+</head>
+<body>
+    <div class="welcome-screen">
+        <h1 id="knockText">Knock Knock Puthu!! Can I come?</h1>
+        <button id="yesButton">Yeah Sure</button>
+        <button id="noButton">Leave Me Alone</button>
+        <p id="responseMessage"></p>
+    </div>
+    <div class="container" style="display:none;">
+        <h1>Hey Puthu!</h1>
+        <p>Should I order pastry for you?</p>
+        <div class="button-container">
+            <button id="yesBtn">YES</button>
+            <button id="noBtn">NO</button>
+        </div>
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

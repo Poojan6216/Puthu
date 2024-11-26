@@ -1,0 +1,116 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Container for the main content */
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* General button styling */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Animation for fading in the welcome screen */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Styling for the welcome screen */
+.welcome-screen {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for welcome screen buttons */
+.welcome-screen button {
+    background-color: #007BFF;
+    color: white;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-screen button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for messages displayed on the welcome screen */
+#responseMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
+}
+
+/* Button container for dynamic NO button */
+.button-container {
+    position: relative;
+    width: 100%; /* Makes full use of the .container width */
+    height: 200px; /* Fixed height to allow movement within */
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; /* Centers buttons vertically */
+    margin: 20px 0; /* Adds vertical spacing from other elements */
+}
+
+/* Specific styling for the dynamic 'NO' button */
+.button-container button {
+    position: absolute; /* Allows dynamic positioning */
+    background-color: #FF5722;
+    color: white;
+    margin: 0 10px; /* Ensures spacing between YES and NO buttons */
+    /*position: absolute; /* NO button uses absolute for dynamic movement */
+    transition: transform 0.2s;
+}
+
+.button-container button:hover {
+    background-color: #E64A19;
+    transform: scale(1.05);
+}
+
+/* Styling for messages in the main content */
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: red;
+}
+
+#yesBtn {
+    position: static; /* Keeps the YES button stationary */
+}
